@@ -5,10 +5,10 @@ public class Programm
 
 	public static void main(String[] args) 
 	{
-		Getr‰nke colazero = new Getr‰nke("colazero","coca cola" , "cola" , 1);
-		Getr‰nke fanta = new Getr‰nke("fanta","fantasia" , "orange" , 2);
-		Getr‰nke himbeersaft = new Getr‰nke("himbeersaft","heinrichs beste himbeeren" , "himbeere", 3);
-		Getr‰nke wasser = new Getr‰nke("wasser","Wiener Wasser" , "puren", 4);
+		Getr√§nke colazero = new Getr√§nke("colazero","coca cola" , "cola" , 1);
+		Getr√§nke fanta = new Getr√§nke("fanta","fantasia" , "orange" , 2);
+		Getr√§nke himbeersaft = new Getr√§nke("himbeersaft","heinrichs beste himbeeren" , "himbeere", 3);
+		Getr√§nke wasser = new Getr√§nke("wasser","Wiener Wasser" , "puren", 4);
 		
 		colazero.setPreis(2);
 		fanta.setPreis(3);
@@ -18,7 +18,7 @@ public class Programm
 		System.out.print("2 Fanta  ");
 		System.out.print("3 Himbeersaft  ");
 		System.out.println("4 Wasser  ");
-		System.out.print("W‰hlen sie eine Nummer : ");
+		System.out.print("W√§hlen sie eine Nummer : ");
 		
 		
 		Scanner scan = new Scanner(System.in);
@@ -42,7 +42,7 @@ public class Programm
 					int fehlendGeld = colazero.getPreis() - geldEingabe1;
 					
 					
-					System.out.println("es fehlt noch " + fehlendGeld + "Ä");
+					System.out.println("es fehlt noch " + fehlendGeld + "‚Ç¨");
 				}
 				break;
 				
@@ -60,7 +60,7 @@ public class Programm
 					int fehlendGeld = fanta.getPreis() - geldEingabe2;
 					
 					
-					System.out.println("es fehlt noch " + fehlendGeld + "Ä");
+					System.out.println("es fehlt noch " + fehlendGeld + "‚Ç¨");
 				}
 				break;
 				
@@ -77,7 +77,7 @@ public class Programm
 					int fehlendGeld = himbeersaft.getPreis() - geldEingabe3;
 					
 					
-					System.out.println("es fehlt noch " + fehlendGeld + "Ä");
+					System.out.println("es fehlt noch " + fehlendGeld + "‚Ç¨");
 				}
 				break;
 		
@@ -94,14 +94,14 @@ public class Programm
 					int fehlendGeld = wasser.getPreis() - geldEingabe4;
 					
 					
-					System.out.println("es fehlt noch " + fehlendGeld + "Ä");
+					System.out.println("es fehlt noch " + fehlendGeld + "‚Ç¨");
 				}
 				break;
 		
-		case (5-100): System.out.println("nummer ned verf¸gbar");
+		case (5-100): System.out.println("nummer ned verf√ºgbar");
 				break;
 				
-		default: System.out.println("bissste pleeeite boi");		
+		default: System.out.println("Sie m√ºssen Geld einwerfen!");		
 				break;
 		}
 		
@@ -111,7 +111,7 @@ public class Programm
 	public static int rechnermaschine(int geld, int preis) 
 	{
 		int restgeld = geld - preis;
-		System.out.println("Ihr Restgeld von " + restgeld + " Ä befindet sich im beh‰lter");
+		System.out.println("Ihr Restgeld von " + restgeld + " ‚Ç¨ befindet sich im beh√§lter");
 		return restgeld;
 		
 	}
