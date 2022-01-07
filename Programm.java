@@ -100,9 +100,7 @@ public class Programm
 		
 		case (5-100): System.out.println("nummer ned verfügbar");
 				break;
-				
-		default: System.out.println("Sie müssen Geld einwerfen!");		
-				break;
+		
 		}
 		
 
